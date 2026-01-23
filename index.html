@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ultimate Bootstrap Website</title>
+    <title>أقوى موقع  Bootstrap</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -12,7 +12,7 @@
         body {
             padding: 20px;
             background: #f7f7f7;
-            font-family: "Arial", sans-serif;
+            font-family: "Tajawal", sans-serif;
         }
 
         h2.section-title {
@@ -48,7 +48,9 @@
 
         .btn {
             width: 130px;
+            /* نفس المساحة لكل الأزرار */
             text-align: center;
+            /* النص في المنتصف */
         }
 
         .card-img-top {
@@ -94,12 +96,15 @@
         .buttons-container {
             display: flex;
             justify-content: space-between;
+            /* توزيع تلقائي للمسافات */
             gap: 10px;
+            /* مسافات متساوية بين الأزرار */
             width: 100%;
         }
 
         .buttons-container .btn {
             flex: 1;
+            /* كل زر يأخذ نفس الحجم */
             text-align: center;
             padding: 12px 0;
         }
@@ -132,16 +137,17 @@
             margin-bottom: 80px;
         }
 
-        /* Accordion styling */
+        /* يجعل الاتجاه من اليمين لليسار */
         .accordion-button {
-            direction: ltr;
+            direction: rtl;
             text-align: center;
             justify-content: center;
         }
 
+        /* يجعل السهم في البداية وليس النهاية */
         .accordion-button::after {
-            margin-left: auto;
-            margin-right: 0;
+            margin-left: 0;
+            margin-right: auto;
         }
     </style>
 </head>
@@ -150,10 +156,10 @@
 
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Best Bootstrap</a>
+            <a class="navbar-brand" href="#">أفضل Bootstrap</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+                aria-label="تبديل القائمة">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -161,45 +167,46 @@
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">رابط</a>
                     </li>
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
+                            القائمة المنسدلة
                         </a>
 
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">إجراء</a></li>
+                            <li><a class="dropdown-item" href="#">إجراء آخر</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">شيء آخر هنا</a></li>
                         </ul>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">غير متاح</a>
                     </li>
 
                 </ul>
 
                 <form class="d-flex">
-                    <input class="form-control ms-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <input class="form-control ms-2" type="search" placeholder="بحث" aria-label="بحث">
+                    <button class="btn btn-outline-success" type="submit">بحث</button>
                 </form>
 
             </div>
         </div>
     </nav>
 
-    <h2 class="section-title">Amazing Slider</h2>
+
+    <h2 class="section-title">سلايدر خرافي</h2>
 
     <div id="mainCarousel" class="carousel slide shadow" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -218,16 +225,16 @@
         </button>
     </div>
 
-    <h2 class="section-title">Professional Cards</h2>
+    <h2 class="section-title">كروت احترافية</h2>
 
     <div class="row g-4">
         <div class="col-md-4">
             <div class="card shadow">
                 <img src="./pexels-vlada-karpovich-4050290.jpg" class="card-img-top">
                 <div class="card-body">
-                    <h5 class="card-title fw-bold">Excellent Card</h5>
-                    <p class="card-text">Beautiful sample text to describe this excellent card.</p>
-                    <a href="#" class="btn btn-primary w-100">Go Now</a>
+                    <h5 class="card-title fw-bold">كارت ممتاز</h5>
+                    <p class="card-text">نص تجريبي جميل لتعريف هذا الكارت الممتاز.</p>
+                    <a href="#" class="btn btn-primary w-100">اذهب الآن</a>
                 </div>
             </div>
         </div>
@@ -236,9 +243,9 @@
             <div class="card shadow">
                 <img src="./Abdo.jpg" class="card-img-top">
                 <div class="card-body">
-                    <h5 class="card-title fw-bold">Strong Card</h5>
-                    <p class="card-text">This card is also professionally designed.</p>
-                    <a href="#" class="btn btn-success w-100">More Details</a>
+                    <h5 class="card-title fw-bold">كارت قوي</h5>
+                    <p class="card-text">هذا الكارت أيضًا مصمم بشكل احترافي.</p>
+                    <a href="#" class="btn btn-success w-100">تفاصيل أكثر</a>
                 </div>
             </div>
         </div>
@@ -247,82 +254,409 @@
             <div class="card shadow">
                 <img src="./Abdo logo.png" class="card-img-top">
                 <div class="card-body">
-                    <h5 class="card-title fw-bold">Awesome Card</h5>
-                    <p class="card-text">The best card design you can see.</p>
-                    <a href="#" class="btn btn-danger w-100">Contact Us</a>
+                    <h5 class="card-title fw-bold">كارت خرافي</h5>
+                    <p class="card-text">أفضل تصميم كرت ممكن تشوفه.</p>
+                    <a href="#" class="btn btn-danger w-100">تواصل معنا</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <h2 class="section-title">Buttons</h2>
+    <h2 class="section-title">ازرار لا طقهر</h2>
 
-    <button type="button" class="btn btn-primary" style="margin-left: 50px;">Primary Blue</button>
-    <button type="button" class="btn btn-secondary" style="margin-left: 50px;">Secondary Gray</button>
-    <button type="button" class="btn btn-success" style="margin-left: 50px;">Success Green</button>
-    <button type="button" class="btn btn-danger" style="margin-left: 50px;">Danger Red</button>
-    <button type="button" class="btn btn-warning" style="margin-left: 50px;">Warning Yellow</button>
-    <button type="button" class="btn btn-info" style="margin-left: 50px;">Info Sky</button>
-    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-primary" style="margin-left: 50px;">أزرق أساسي</button>
+    <button type="button" class="btn btn-secondary" style="margin-left: 50px;">رمادي ثانوي</button>
+    <button type="button" class="btn btn-success" style="margin-left: 50px;">أخضر نجاح</button>
+    <button type="button" class="btn btn-danger" style="margin-left: 50px;">أحمر خطر</button>
+    <button type="button" class="btn btn-warning" style="margin-left: 50px;">أصفر تحذير</button>
+    <button type="button" class="btn btn-info" style="margin-left: 50px;">سماوي معلومات</button>
+    <button type="button" class="btn btn-dark">داكن</button>
 
-    <h2 class="section-title">Slider Example</h2>
+    <h2 class="section-title">شريط التمرير</h2>
 
-    <label for="customRange1" class="form-label">Example</label>
+    <label for="customRange1" class="form-label">مثال</label>
     <input type="range" class="form-range" id="customRange1">
 
-    <h2 class="section-title">FAQs</h2>
+    <h2 class="section-title">أسئلة شائعة</h2>
+
 
     <div class="accordion accordion-flush" id="accordionFlushExample">
-        <!-- First Question -->
+        <!-- السؤال الأول -->
         <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Question 1: Who are the followers of Islam?
+                    السؤال الأول: من هم أهل الدين الإسلامي؟
                 </button>
             </h2>
             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
                 data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
-                    Followers of Islam are Muslims who believe in Allah as the only God, His books, His angels, His messengers, the Last Day, and divine decree, and perform righteous deeds and follow Allah's guidance in worship and ethics.
+                    أهل الدين الإسلامي هم المسلمون الذين يؤمنون بالله تعالى ربًا واحدًا، وبكتبه، وبملائكته، وبرسالته إلى
+                    النبي محمد صلى الله عليه وسلم، وباليوم الآخر، ويُؤمنون بالقضاء والقدر ويعملون بالأعمال الصالحة
+                    ويطبقون ما أمر الله به من عبادة وأخلاق.
                 </div>
             </div>
         </div>
 
-        <!-- Second Question -->
+        <!-- السؤال الثاني -->
         <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    Question 2: Who will enter Paradise?
+                    السؤال الثاني: من سوف يدخلون الجنة؟
                 </button>
             </h2>
             <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                 data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
-                    Believers who have faith in Allah, His books, angels, messengers, the Last Day, and divine decree, and perform righteous deeds, will enter Paradise. Faith and good deeds together lead to success.
+                    يدخلون الجنة بإذن الله تعالى المؤمنون — أي الذين آمنوا بالله وكتبه وملائكته ورسله واليوم الآخر
+                    والقضاء والقدر (الإيمان بأركان الإيمان)، وعملوا الأعمال الصالحة من طاعة وصدق ورحمة وعدالة. الإيمان
+                    والعمل الصالح معًا هما سبيل الفوز بالجنة.
                 </div>
             </div>
         </div>
 
-        <!-- Third Question -->
+        <!-- السؤال الثالث -->
         <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Question 3: In which year did the Prophet perform the Farewell Pilgrimage?
+                    السؤال الثالث: في أي عام حج النبي صلى الله عليه وسلم حجة الوداع؟
                 </button>
             </h2>
             <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
                 data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
-                    Prophet Muhammad performed the Farewell Pilgrimage in the month of Dhu al-Hijjah in the 10th year of Hijrah (10 AH). This was the last pilgrimage of the Prophet where he delivered a great sermon.
+                    حج النبي محمد صلى الله عليه وسلم حجة الوداع في شهر ذو الحجة من السنة العاشرة للهجرة (10 هـ). هذه
+                    كانت آخر مرة حجَّ فيها النبي وألقى فيها خطبة عظيمة.
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- The rest of the content (Collapse, Lists, Backgrounds, Tables, Spinners, Progress Bars, Modals, Layouts, Forms) can be translated similarly -->
+
+    <h2 class="section-title">كولابس رائع</h2>
+
+    <div class="w-75 mx-auto">
+        <button class="btn btn-info w-100 mb-2" data-bs-toggle="collapse" data-bs-target="#myCollapse">افتح
+            الكولابس</button>
+        <div id="myCollapse" class="collapse border rounded p-3 bg-white shadow">
+            <h4 class="fw-bold">هذا كولابس من Bootstrap</h4>
+            <p>يمكنك وضع أي محتوى بداخله بما في ذلك نصوص وصور وروابط.</p>
+        </div>
+    </div>
+
+    <h2 class="section-title">قائمة عالية الجودة</h2>
+
+    <ul class="list-group w-50 mx-auto">
+        <li class="list-group-item list-group-item-primary">عنصر 1</li>
+        <li class="list-group-item list-group-item-success">عنصر 2</li>
+        <li class="list-group-item list-group-item-warning">عنصر 3</li>
+        <li class="list-group-item list-group-item-danger">عنصر 4</li>
+        <li class="list-group-item list-group-item-info">عنصر 5</li>
+    </ul>
+
+    <h2 class="section-title">خلفيات عالية الجودة</h2>
+
+    <div class="p-3 mb-2 bg-primary text-white">أزرق أساسي</div>
+    <div class="p-3 mb-2 bg-secondary text-white">رمادي ثانوي</div>
+    <div class="p-3 mb-2 bg-success text-white">أخضر نجاح</div>
+    <div class="p-3 mb-2 bg-danger text-white">أحمر خطر</div>
+    <div class="p-3 mb-2 bg-warning text-dark">أصفر تحذير</div>
+    <div class="p-3 mb-2 bg-info text-dark">سماوي معلومات</div>
+    <div class="p-3 mb-2 bg-dark text-white">داكن</div>
+
+
+    <h2 class="section-title">جدول عالمي</h2>
+
+    <table class="table table-dark table-sm table-bordered shadow">
+        <thead class="table-dark">
+            <tr>
+                <th>#</th>
+                <th>الاسم</th>
+                <th>المسمى الوظيفي</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>محمد</td>
+                <td>مبرمج</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>أحمد</td>
+                <td>مهندس</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>عبدالرحمن</td>
+                <td>رجل اعمال</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h2 class="section-title">سبدرس خيالية</h2>
+
+    <div class="spinner-border text-primary" role="status" style="margin-left: 55px;
+            margin-bottom: 20px;">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-border text-secondary" role="status" style="margin-left: 55px;
+            margin-bottom: 20px;">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-border text-success" role="status" style="margin-left: 55px;
+            margin-bottom: 20px;">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-border text-danger" role="status" style="margin-left: 55px;
+            margin-bottom: 20px;">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-border text-warning" role="status" style="margin-left: 55px;
+            margin-bottom: 20px;">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-border text-info" role="status" style="margin-left: 55px;
+            margin-bottom: 20px;">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-border text-dark" role="status" style="margin-left: 55px;
+            margin-bottom: 20px;">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-primary" role="status" style="margin-left: 55px;
+            margin-bottom: 20px;">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-secondary" role="status" style="margin-left: 55px;
+            margin-bottom: 20px;">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-success" role="status" style="margin-left: 55px;
+            margin-bottom: 20px;">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-danger" role="status" style="margin-left: 55px;
+            margin-bottom: 20px;">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-warning" role="status" style="margin-left: 55px;
+            margin-bottom: 20px;">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-info" role="status" style="margin-left: 55px;
+            margin-bottom: 20px;">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-dark" role="status" style="margin-bottom:20px;">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+
+    <h2 class="section-title">شريط التقدم</h2>
+
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10"
+            aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%"
+            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50"
+            aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%"
+            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%"
+            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+
+    <h2 class="section-title">مودال إضافي</h2>
+
+    <button class="btn btn-secondary w-25 mx-auto d-block" data-bs-toggle="modal" data-bs-target="#extraModal">
+        افتح المودال الإضافي
+    </button>
+
+    <div class="modal fade" id="extraModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-4">
+                <h3 class="fw-bold">مودال جديد!</h3>
+                <p>هذا مودال إضافي تمت إضافته كما طلبت.</p>
+                <button class="btn btn-dark mt-2" data-bs-dismiss="modal">إغلاق</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- زر فتح المودال -->
+    <button class="btn btn-primary w-25 mx-auto d-block mt-4" data-bs-toggle="modal" data-bs-target="#myModal">
+        افتح المودال
+    </button>
+
+    <!-- المودال -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-4">
+                <h3 class="fw-bold text-center">مرحباً بك!</h3>
+                <p class="text-center">هذا مودال تم إضافته بشكل احترافي داخل المشروع.</p>
+
+                <div class="text-center">
+                    <button class="btn btn-danger mt-3" data-bs-dismiss="modal">إغلاق</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-title">🔥 جميع أنواع الـ Layouts بستايل احترافي</h2>
+
+    <!-- Grid Layout -->
+    <div class="card p-4 mb-4 shadow">
+        <h4 class="fw-bold mb-3"> Grid Layout</h4>
+        <div class="row text-center">
+            <div class="col-md-4 p-3 vibrant">عمود 1</div>
+            <div class="col-md-4 p-3 vibrant2">عمود 2</div>
+            <div class="col-md-4 p-3 vibrant3">عمود 3</div>
+        </div>
+    </div>
+
+    <!-- Two Column Layout -->
+    <div class="card p-4 mb-4 shadow">
+        <h4 class="fw-bold mb-3"> تخطيط عمودين</h4>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="p-4 bg-primary text-white rounded">العمود الأيسر</div>
+            </div>
+            <div class="col-md-6">
+                <div class="p-4 bg-warning rounded">العمود الأيمن</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cards Layout -->
+    <div class="card p-4 mb-4 shadow">
+        <h4 class="fw-bold mb-3"> تخطيط الكروت</h4>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="card p-4 text-center vibrant">كارت 1</div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4 text-center vibrant2">كارت 2</div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4 text-center vibrant3">كارت 3</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar Layout -->
+    <div class="card p-4 mb-4 shadow">
+        <h4 class="fw-bold mb-3"> تخطيط بقائمة جانبية</h4>
+        <div class="row">
+            <div class="col-md-3 bg-dark text-white p-4 rounded">القائمة الجانبية</div>
+            <div class="col-md-9 bg-light p-4 rounded">المحتوى الرئيسي</div>
+        </div>
+    </div>
+
+    <h2 class="section-title">🔥 جميع أنواع الـ Forms في Bootstrap (بألوان زاهية ورائعة)</h2>
+
+    <!-- نموذج تسجيل الدخول -->
+    <div class="card p-4 mb-4 vibrant">
+        <h4 class="fw-bold mb-3"> نموذج تسجيل الدخول</h4>
+        <form>
+            <label class="form-label mt-2">البريد الإلكتروني</label>
+            <input type="email" class="form-control mb-3" placeholder="example@mail.com">
+
+            <label class="form-label">كلمة المرور</label>
+            <input type="password" class="form-control mb-3" placeholder="••••••••">
+
+            <button class="btn btn-light w-100 fw-bold">تسجيل الدخول</button>
+        </form>
+    </div>
+
+    <!-- نموذج تسجيل حساب جديد -->
+    <div class="card p-4 mb-4 vibrant2">
+        <h4 class="fw-bold mb-3"> نموذج إنشاء حساب جديد</h4>
+        <form>
+            <label class="form-label">الاسم الكامل</label>
+            <input type="text" class="form-control mb-3" placeholder="اكتب اسمك هنا">
+
+            <label class="form-label">البريد الإلكتروني</label>
+            <input type="email" class="form-control mb-3" placeholder="example@mail.com">
+
+            <label class="form-label">كلمة المرور</label>
+            <input type="password" class="form-control mb-3" placeholder="كلمة مرور قوية">
+
+            <label class="form-label">تأكيد كلمة المرور</label>
+            <input type="password" class="form-control mb-3" placeholder="أعد كتابة كلمة المرور">
+
+            <button class="btn btn-light w-100 fw-bold">إنشاء الحساب</button>
+        </form>
+    </div>
+
+    <!-- نموذج تواصل (مع textarea) -->
+    <div class="card p-4 mb-4 vibrant3">
+        <h4 class="fw-bold mb-3"> نموذج تواصل</h4>
+        <form>
+            <label class="form-label">اسمك</label>
+            <input type="text" class="form-control mb-3" placeholder="أدخل اسمك">
+
+            <label class="form-label">البريد الإلكتروني</label>
+            <input type="email" class="form-control mb-3" placeholder="example@mail.com">
+
+            <label class="form-label">رسالتك</label>
+            <textarea rows="4" class="form-control mb-3" placeholder="اكتب رسالتك"></textarea>
+
+            <button class="btn btn-dark w-100 fw-bold">إرسال</button>
+        </form>
+    </div>
+
+    <!-- Form Elements: Select, Checkbox, Radio -->
+    <div class="card p-4 mb-4 shadow">
+        <h4 class="fw-bold mb-3 text-center"> جميع عناصر الفورم</h4>
+
+        <label class="form-label">اختر دولتك</label>
+        <select class="form-select mb-3">
+            <option>مصر</option>
+            <option>السعودية</option>
+            <option>الإمارات</option>
+        </select>
+
+        <label class="form-label">اختر مهاراتك</label>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="h1">
+            <label class="form-check-label" for="h1">تصميم</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="h2">
+            <label class="form-check-label" for="h2">برمجة</label>
+        </div>
+
+        <label class="form-label mt-3">الجنس</label>
+        <div class="form-check">
+            <input type="radio" name="g" class="form-check-input" id="m">
+            <label class="form-check-label" for="m">ذكر</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" name="g" class="form-check-input" id="f">
+            <label class="form-check-label" for="f">أنثى</label>
+        </div>
+    </div>
+
+    <!-- رفع ملفات -->
+    <div class="card p-4 mb-4 shadow">
+        <h4 class="fw-bold mb-3"> رفع الملفات</h4>
+        <input type="file" class="form-control mb-3">
+        <button class="btn btn-primary w-100">رفع الملف</button>
+    </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
