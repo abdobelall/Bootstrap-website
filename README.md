@@ -52,5 +52,3 @@ It is suitable for beginners and anyone who wants to master responsive design us
 - Beginner-friendly structure
 
 ---
-
-## 📂 Project Structure
